@@ -1,5 +1,6 @@
 const counterFactory = () => {
-  throw new Error('Please FIXME!')
+  let counter = 1
+  return () => counter++
 }
 
 export default counterFactory

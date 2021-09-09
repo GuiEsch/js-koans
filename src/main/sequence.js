@@ -1,5 +1,9 @@
 const createSequence = (length) => {
-  throw new Error(`Please FIXME and do something with: ${JSON.stringify({ length })}`)
+  let result = []
+  for(let i=1; i<=length; i++){
+    result.push(i)
+  }
+  return result;
 }
 
 export { createSequence }
