@@ -1,5 +1,3 @@
-const delay = async (ms, value) => {
-  setTimeout(() => {}, ms)
-  return value
-}
+const delay = async (ms, value) => new Promise(resolve => { setTimeout(() => {resolve(value)}, ms)})
+
 export default delay
